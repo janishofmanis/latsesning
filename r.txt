@@ -1,0 +1,6 @@
+sudo apt-get install nodejs
+sudo apt-get install npm
+
+sudo apt-get install nodejs-legacy
+sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8080
+node server.js
